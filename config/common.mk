@@ -103,6 +103,11 @@ PRODUCT_PACKAGES += \
     ntfsfix \
     ntfs-3g
 
+# SuperSU
+PRODUCT_COPY_FILES += \
+   vendor/tesla/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+   vendor/tesla/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
     libffmpeg_extractor \
