@@ -89,7 +89,8 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     SlimOTA \
     LockClock \
-    DashClock
+    DashClock \
+    OmniSwitch
 
 #    SlimFileManager removed until updated
 
