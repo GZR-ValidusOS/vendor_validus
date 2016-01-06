@@ -87,7 +87,6 @@ PRODUCT_PACKAGES += \
     SlimLauncher \
     LatinIME \
     BluetoothExt \
-    OmniJaws \
     SlimOTA \
     LockClock \
     DashClock \
