@@ -90,7 +90,8 @@ PRODUCT_PACKAGES += \
     SlimOTA \
     LockClock \
     DashClock \
-    OmniSwitch
+    OmniSwitch \
+    Snap
 
 #    SlimFileManager removed until updated
 
