@@ -134,6 +134,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/tesla/overlay/common
 
+# Viper4Android
+PRODUCT_COPY_FILES += \
+   vendor/tesla/prebuilt/common/bin/audio_policy.sh:system/audio_policy.sh \
+   vendor/tesla/prebuilt/common/addon.d/95-LolliViPER.sh:system/addon.d/95-LolliViPER.sh \
+   vendor/tesla/prebuilt/common/su.d/50viper.sh:system/su.d/50viper.sh \
+   vendor/tesla/prebuilt/common/app/Viper4Android/Viper4Android.apk:system/priv-app/Viper4Android/Viper4Android.apk
+
 # Boot animation include
 ifneq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
 
