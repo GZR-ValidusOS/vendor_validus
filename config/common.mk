@@ -125,6 +125,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # easy way to extend to add more packages
 -include vendor/extra/product.mk
 
+-include vendor/tesla/config/dtc.mk
+
 PRODUCT_PACKAGE_OVERLAYS += vendor/tesla/overlay/common
 
 # Boot animation include
