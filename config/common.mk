@@ -91,7 +91,8 @@ PRODUCT_PACKAGES += \
     LockClock \
     DashClock \
     OmniSwitch \
-    Snap
+    Snap \
+    OmniStyle
 
 #    SlimFileManager removed until updated
 
