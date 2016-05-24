@@ -92,7 +92,8 @@ PRODUCT_PACKAGES += \
     DashClock \
     OmniSwitch \
     Snap \
-    OmniStyle
+    OmniStyle \
+    KernelAdiutor
 
 #    SlimFileManager removed until updated
 
