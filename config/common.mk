@@ -182,14 +182,14 @@ endif
 # Versioning System
 # Tesla first version.
 PRODUCT_VERSION_MAJOR = 6.0.1
-PRODUCT_VERSION_MINOR = EMP
+PRODUCT_VERSION_MINOR = RC-1
 PRODUCT_VERSION_MAINTENANCE = v2.1
 ifdef TIPSY_BUILD_EXTRA
     TESLA_POSTFIX := -$(TESLA_BUILD_EXTRA)
 endif
 
 ifndef TESLA_BUILD_TYPE
-    TESLA_BUILD_TYPE := Beta
+    TESLA_BUILD_TYPE := Unofficial
     TESLA_POSTFIX := -$(shell date +"%Y%m%d-%H%M")
 endif
 
