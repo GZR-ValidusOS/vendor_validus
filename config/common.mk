@@ -30,6 +30,10 @@ PRODUCT_COPY_FILES += \
     vendor/tesla/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/tesla/prebuilt/common/bin/50-tesla.sh:system/addon.d/50-tesla.sh
 
+# Backup Services whitelist
+PRODUCT_COPY_FILES += \
+    vendor/tesla/config/permissions/backup.xml:system/etc/sysconfig/backup.xml
+
 # Signature compatibility validation
 PRODUCT_COPY_FILES += \
     vendor/tesla/prebuilt/common/bin/otasigcheck.sh:install/bin/otasigcheck.sh
