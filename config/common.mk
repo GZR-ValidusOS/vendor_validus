@@ -97,7 +97,8 @@ PRODUCT_PACKAGES += \
     OmniSwitch \
     Snap \
     OmniStyle \
-    KernelAdiutor
+    KernelAdiutor \
+    masquerade
 
 #    SlimFileManager removed until updated
 
