@@ -193,7 +193,7 @@ ifdef TIPSY_BUILD_EXTRA
 endif
 
 ifndef TESLA_BUILD_TYPE
-    TESLA_BUILD_TYPE := Unofficial
+    TESLA_BUILD_TYPE := OMS
     TESLA_POSTFIX := -$(shell date +"%Y%m%d-%H%M")
 endif
 
