@@ -1,2 +1,1 @@
 genfscon fuseblk / u:object_r:fuseblk:s0
-genfscon sdcardfs / u:object_r:fuse:s0
