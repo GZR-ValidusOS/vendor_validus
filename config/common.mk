@@ -25,10 +25,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.debug.alloc=0
 
 # Backup Tool
-PRODUCT_COPY_FILES += \
-    vendor/tesla/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
-    vendor/tesla/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/tesla/prebuilt/common/bin/50-tesla.sh:system/addon.d/50-tesla.sh
+#PRODUCT_COPY_FILES += \
+#    vendor/tesla/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
+#    vendor/tesla/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
+#    vendor/tesla/prebuilt/common/bin/50-tesla.sh:system/addon.d/50-tesla.sh
 
 # Backup Services whitelist
 PRODUCT_COPY_FILES += \
@@ -81,26 +81,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AudioFX
 
-# CM Hardware Abstraction Framework
-PRODUCT_PACKAGES += \
-    org.cyanogenmod.hardware \
-    org.cyanogenmod.hardware.xml
-
 # Extra Optional packages
 PRODUCT_PACKAGES += \
-    SlimLauncher \
     LatinIME \
     BluetoothExt \
-    SlimOTA \
-    LockClock \
-    DashClock \
-    OmniSwitch \
-    Snap \
-    OmniStyle \
-    KernelAdiutor \
     masquerade
-
-#    SlimFileManager removed until updated
 
 # Extra tools
 PRODUCT_PACKAGES += \
@@ -119,10 +104,6 @@ PRODUCT_COPY_FILES += \
    vendor/tesla/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
    vendor/tesla/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
-# Adaway
-PRODUCT_COPY_FILES += \
-vendor/tesla/prebuilt/common/app/adaway.apk:system/app/adaway.apk
-
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
     libffmpeg_extractor \
@@ -136,16 +117,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # easy way to extend to add more packages
 -include vendor/extra/product.mk
 
--include vendor/tesla/config/dtc.mk
-
 PRODUCT_PACKAGE_OVERLAYS += vendor/tesla/overlay/common
-
-# Viper4Android
-PRODUCT_COPY_FILES += \
-   vendor/tesla/prebuilt/common/bin/audio_policy.sh:system/audio_policy.sh \
-   vendor/tesla/prebuilt/common/addon.d/95-LolliViPER.sh:system/addon.d/95-LolliViPER.sh \
-   vendor/tesla/prebuilt/common/su.d/50viper.sh:system/su.d/50viper.sh \
-   vendor/tesla/prebuilt/common/app/Viper4Android/Viper4Android.apk:system/priv-app/Viper4Android/Viper4Android.apk
 
 # Boot animation include
 ifneq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
@@ -186,15 +158,15 @@ endif
 
 # Versioning System
 # Tesla first version.
-PRODUCT_VERSION_MAJOR = 6.0.1
-PRODUCT_VERSION_MINOR = RC-1
-PRODUCT_VERSION_MAINTENANCE = v2.2
+PRODUCT_VERSION_MAJOR = 7.0
+PRODUCT_VERSION_MINOR = Beta
+PRODUCT_VERSION_MAINTENANCE = v3.0
 ifdef TIPSY_BUILD_EXTRA
     TESLA_POSTFIX := -$(TESLA_BUILD_EXTRA)
 endif
 
 ifndef TESLA_BUILD_TYPE
-    TESLA_BUILD_TYPE := OMS
+    TESLA_BUILD_TYPE := DEV
     TESLA_POSTFIX := -$(shell date +"%Y%m%d-%H%M")
 endif
 
