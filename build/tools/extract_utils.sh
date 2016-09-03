@@ -644,11 +644,45 @@ function extract() {
             fi
         fi
 
+<<<<<<< HEAD
         local TYPE="${DEST##*/}"
         if [ "$TYPE" = "bin" -o "$TYPE" = "sbin" ]; then
             chmod 755 "$DEST"
         else
             chmod 644 "$DEST"
+=======
+        # Check pinned files
+        local HASH="${HASHLIST[$i-1]}"
+        if [ "$DISABLE_PINNING" != "1" ] && [ ! -z "$HASH" ] && [ "$HASH" != "x" ]; then
+            local KEEP=""
+            local TMP="$TMP_DIR/$FROM"
+            if [ -f "$TMP" ]; then
+                if [ ! -f "$DEST" ]; then
+                    KEEP="1"
+                else
+                    local DEST_HASH=$(sha1sum "$DEST" | awk '{print $1}' )
+                    if [ "$DEST_HASH" != "$HASH" ]; then
+                        KEEP="1"
+                    fi
+                fi
+                if [ "$KEEP" = "1" ]; then
+                    local TMP_HASH=$(sha1sum "$TMP" | awk '{print $1}' )
+                    if [ "$TMP_HASH" = "$HASH" ]; then
+                        printf '    + (keeping pinned file with hash %s)\n' "$HASH"
+                        cp -p "$TMP" "$DEST"
+                    fi
+                fi
+            fi
+        fi
+
+        if [ -f "$DEST" ]; then
+            local TYPE="${DIR##*/}"
+            if [ "$TYPE" = "bin" -o "$TYPE" = "sbin" ]; then
+                chmod 755 "$DEST"
+            else
+                chmod 644 "$DEST"
+            fi
+>>>>>>> 79fa59b... extract_utils: Add flag to disable pinning
         fi
     done
 
