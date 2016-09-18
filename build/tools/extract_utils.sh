@@ -644,13 +644,12 @@ function extract() {
             fi
         fi
 
-<<<<<<< HEAD
         local TYPE="${DEST##*/}"
         if [ "$TYPE" = "bin" -o "$TYPE" = "sbin" ]; then
             chmod 755 "$DEST"
         else
             chmod 644 "$DEST"
-=======
+
         # Check pinned files
         local HASH="${HASHLIST[$i-1]}"
         if [ "$DISABLE_PINNING" != "1" ] && [ ! -z "$HASH" ] && [ "$HASH" != "x" ]; then
@@ -682,7 +681,6 @@ function extract() {
             else
                 chmod 644 "$DEST"
             fi
->>>>>>> 79fa59b... extract_utils: Add flag to disable pinning
         fi
     done
 
