@@ -649,6 +649,7 @@ function extract() {
             chmod 755 "$DEST"
         else
             chmod 644 "$DEST"
+        fi
 
         # Check pinned files
         local HASH="${HASHLIST[$i-1]}"
