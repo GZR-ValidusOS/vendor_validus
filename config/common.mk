@@ -69,6 +69,7 @@ PRODUCT_PACKAGES += \
     CellBroadcastReceiver \
     Development \
     SpareParts \
+    TeslaCoil \
     su
 
 # Optional packages
