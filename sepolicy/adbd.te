@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 allow adbd adbtcp_prop:property_service set;
+=======
+set_prop(adbd, adbsecure_prop)
+>>>>>>> 0525ff2... sepolicy: Fix a few denials
