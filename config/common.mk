@@ -161,13 +161,13 @@ endif
 PRODUCT_VERSION_MAJOR = 7.0
 PRODUCT_VERSION_MINOR = Beta
 PRODUCT_VERSION_MAINTENANCE = v3.0
+TESLA_POSTFIX := -$(shell date +"%Y%m%d-%H%M")
 ifdef TESLA_BUILD_EXTRA
     TESLA_POSTFIX := -$(TESLA_BUILD_EXTRA)
 endif
 
 ifndef TESLA_BUILD_TYPE
     TESLA_BUILD_TYPE := DEV
-    TESLA_POSTFIX := -$(shell date +"%Y%m%d-%H%M")
 endif
 
 # Set all versions
