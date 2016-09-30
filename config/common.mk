@@ -86,7 +86,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LatinIME \
     BluetoothExt \
-    masquerade
+    masquerade \
+    SlimLauncher
 
 # Extra tools
 PRODUCT_PACKAGES += \
