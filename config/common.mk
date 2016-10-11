@@ -102,13 +102,6 @@ PRODUCT_PACKAGES += \
     ntfsfix \
     ntfs-3g
 
-# Telephony packages
-PRODUCT_PACKAGES += \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
-
 # SuperSU
 #PRODUCT_COPY_FILES += \
 #  vendor/tesla/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
