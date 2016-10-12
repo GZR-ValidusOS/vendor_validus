@@ -4,11 +4,7 @@ $(call inherit-product, vendor/tesla/config/common_apn.mk)
 
 # Telephony 
 PRODUCT_PACKAGES += \
-    Stk \
-    telephony-ext     
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+    Stk 
 
 # SMS
 PRODUCT_PACKAGES += \
