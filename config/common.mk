@@ -25,10 +25,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.debug.alloc=0
 
 # Backup Tool
-#PRODUCT_COPY_FILES += \
-#    vendor/tesla/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
-#    vendor/tesla/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-#    vendor/tesla/prebuilt/common/bin/50-tesla.sh:system/addon.d/50-tesla.sh
+PRODUCT_COPY_FILES += \
+    vendor/tesla/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/tesla/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/tesla/prebuilt/common/bin/50-tesla.sh:system/addon.d/50-tesla.sh
 
 # Backup Services whitelist
 PRODUCT_COPY_FILES += \
