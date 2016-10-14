@@ -87,7 +87,6 @@ PRODUCT_PACKAGES += \
     LatinIME \
     BluetoothExt \
     masquerade \
-    SlimLauncher \
     KernelAdiutor
 
 # Extra tools
