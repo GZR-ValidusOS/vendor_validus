@@ -101,6 +101,14 @@ PRODUCT_PACKAGES += \
     ntfsfix \
     ntfs-3g
 
+# DU Utils Library
+PRODUCT_BOOT_JARS += \
+    org.dirtyunicorns.utils
+
+# DU Utils Library
+PRODUCT_PACKAGES += \
+    org.dirtyunicorns.utils
+
 # SuperSU
 #PRODUCT_COPY_FILES += \
 #  vendor/tesla/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
