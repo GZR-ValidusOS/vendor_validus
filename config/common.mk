@@ -87,8 +87,9 @@ PRODUCT_PACKAGES += \
     LatinIME \
     BluetoothExt \
     masquerade \
-    KernelAdiutor
-
+    KernelAdiutor \
+    Eleven
+    
 # Extra tools
 PRODUCT_PACKAGES += \
     openvpn \
