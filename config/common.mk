@@ -70,6 +70,7 @@ PRODUCT_PACKAGES += \
     Development \
     SpareParts \
     TeslaCoil \
+    LockClock \
     su
 
 # Optional packages
