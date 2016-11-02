@@ -187,7 +187,7 @@ ifdef TESLA_BUILD_EXTRA
 endif
 
 ifndef TESLA_BUILD_TYPE
-    TESLA_BUILD_TYPE := DEV
+    TESLA_BUILD_TYPE := UNOFFICIAL
 endif
 
 # Set all versions
