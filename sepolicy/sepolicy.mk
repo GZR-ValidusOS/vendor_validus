@@ -4,5 +4,5 @@
 #
 
 BOARD_SEPOLICY_DIRS += \
-    vendor/tesla/sepolicy
+    vendor/validus/sepolicy
 

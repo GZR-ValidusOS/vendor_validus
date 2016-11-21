@@ -1,2 +1,2 @@
 BOARD_SEPOLICY_DIRS += \
-    vendor/tesla/sepolicy/qcom
+    vendor/validus/sepolicy/qcom

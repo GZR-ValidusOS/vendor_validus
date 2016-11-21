@@ -2,7 +2,7 @@
 
 # Exports
 
-. $ANDROID_BUILD_TOP/vendor/tesla/tools/colors
+. $ANDROID_BUILD_TOP/vendor/validus/tools/colors
 
 export Changelog=Changelog.txt
 

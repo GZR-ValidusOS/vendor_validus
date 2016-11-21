@@ -1,3 +1,3 @@
-. "$(gettop)/vendor/tesla/build/envsetup.sh"
+. "$(gettop)/vendor/validus/build/envsetup.sh"
 
-tesla_device_combos
+validus_device_combos
