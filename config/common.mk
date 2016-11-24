@@ -88,6 +88,7 @@ PRODUCT_PACKAGES += \
     LatinIME \
     BluetoothExt \
     SlimOTA \
+    WolvesDen \
     masquerade \
     KernelAdiutor \
     Eleven
