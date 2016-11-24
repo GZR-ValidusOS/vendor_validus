@@ -105,12 +105,12 @@ PRODUCT_PACKAGES += \
     ntfs-3g
 
 # DU Utils Library
-PRODUCT_BOOT_JARS += \
-    org.dirtyunicorns.utils
+#PRODUCT_BOOT_JARS += \
+#    org.dirtyunicorns.utils
 
 # DU Utils Library
-PRODUCT_PACKAGES += \
-    org.dirtyunicorns.utils
+#PRODUCT_PACKAGES += \
+#    org.dirtyunicorns.utils
 
 # SuperSU
 #PRODUCT_COPY_FILES += \
