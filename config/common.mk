@@ -91,7 +91,8 @@ PRODUCT_PACKAGES += \
     WolvesDen \
     masquerade \
     KernelAdiutor \
-    Eleven
+    Eleven \
+    OmniSwitch    
     
 # Extra tools
 PRODUCT_PACKAGES += \
