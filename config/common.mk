@@ -181,7 +181,7 @@ endif
 
 # Versioning System
 # validus first version.
-PRODUCT_VERSION_MAJOR = 7.1
+PRODUCT_VERSION_MAJOR = 7.1.1
 PRODUCT_VERSION_MINOR = Beta
 PRODUCT_VERSION_MAINTENANCE = v13
 VALIDUS_POSTFIX := -$(shell date +"%Y%m%d-%H%M")
