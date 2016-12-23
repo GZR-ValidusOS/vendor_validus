@@ -85,7 +85,7 @@ PRODUCT_PACKAGES += \
 
 # Extra Optional packages
 PRODUCT_PACKAGES += \
-    Calender \
+    Calculator \
     LatinIME \
     BluetoothExt \
     SlimOTA \
