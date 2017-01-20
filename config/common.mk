@@ -94,6 +94,7 @@ PRODUCT_PACKAGES += \
     KernelAdiutor \
     Eleven \
     OmniSwitch \
+    OmniJaws \    
     OmniStyle
     
 # Extra tools
