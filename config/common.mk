@@ -94,9 +94,9 @@ PRODUCT_PACKAGES += \
     KernelAdiutor \
     Eleven \
     OmniSwitch \
-    OmniJaws \    
+    OmniJaws \
     OmniStyle
-    
+
 # Extra tools
 PRODUCT_PACKAGES += \
     openvpn \
