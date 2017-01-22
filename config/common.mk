@@ -76,8 +76,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Basic \
     LiveWallpapersPicker \
-    PhaseBeam \
-    Chromium
+    PhaseBeam 
 
 # AudioFX
 PRODUCT_PACKAGES += \
@@ -94,6 +93,7 @@ PRODUCT_PACKAGES += \
     KernelAdiutor \
     Eleven \
     OmniSwitch \
+    OmniJaws \
     OmniStyle
     
 # Extra tools
