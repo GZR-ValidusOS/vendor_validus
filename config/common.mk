@@ -95,7 +95,7 @@ PRODUCT_PACKAGES += \
     OmniSwitch \
     OmniJaws \
     OmniStyle
-    
+
 # Extra tools
 PRODUCT_PACKAGES += \
     openvpn \
