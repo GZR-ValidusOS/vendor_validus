@@ -94,7 +94,8 @@ PRODUCT_PACKAGES += \
     Eleven \
     OmniSwitch \
     OmniJaws \
-    OmniStyle
+    OmniStyle \
+    MagiskManager
 
 # Extra tools
 PRODUCT_PACKAGES += \
@@ -116,10 +117,9 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     org.dirtyunicorns.utils
 
-# SuperSU
-#PRODUCT_COPY_FILES += \
-#  vendor/validus/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
-#   vendor/validus/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+# Magisk
+PRODUCT_COPY_FILES += \
+   vendor/validus/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
 
 # NovaLauncher
 PRODUCT_COPY_FILES += \

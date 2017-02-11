@@ -186,7 +186,5 @@ function hmm() #hidden
 }
 
 validus_append_hmm "validusremote" "Add a git remote for matching validus repository"
-validus_append_hmm "slimremote" "Add a git remote for matching SLIM repository"
-validus_append_hmm "cmremote" "Add a git remote for matching CM repository"
 validus_append_hmm "aospremote" "Add git remote for matching AOSP repository"
 validus_append_hmm "cafremote" "Add git remote for matching CodeAurora repository."

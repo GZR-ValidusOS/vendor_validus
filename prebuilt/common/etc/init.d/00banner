@@ -4,4 +4,4 @@
 #
 L="log -p i -t tesla"
 
-$L "Welcome to Android `getprop ro.build.version.release` / Tesla `getprop ro.tesla.version`";
+$L "Welcome to Android `getprop ro.build.version.release` / Validus `getprop ro.validus.version`";
