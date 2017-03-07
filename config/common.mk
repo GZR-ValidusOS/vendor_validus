@@ -89,7 +89,7 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     SlimOTA \
     WolvesDen \
-    masquerade \
+    ThemeInterfacer \
     KernelAdiutor \
     Eleven \
     OmniSwitch \
