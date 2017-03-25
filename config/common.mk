@@ -94,8 +94,7 @@ PRODUCT_PACKAGES += \
     Eleven \
     OmniSwitch \
     OmniJaws \
-    OmniStyle \
-    MagiskManager
+    OmniStyle
 
 # Extra tools
 PRODUCT_PACKAGES += \
@@ -117,9 +116,14 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     org.dirtyunicorns.utils
 
+ifeq ($(DEFAULT_ROOT_METHOD),magisk)
+# Magisk Manager
+PRODUCT_PACKAGES += \
+    MagiskManager
 # Magisk
 PRODUCT_COPY_FILES += \
    vendor/validus/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
+endif
 
 # NovaLauncher
 PRODUCT_COPY_FILES += \
