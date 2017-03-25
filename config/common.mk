@@ -116,8 +116,9 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     org.dirtyunicorns.utils
 
-ifeq ($(DEFAULT_ROOT_METHOD),magisk)
-# Magisk Manager
+ifeq ($(DEFAULT_ROOT_METHOD),rootless)
+else
+# Magisk Manager --> default root method
 PRODUCT_PACKAGES += \
     MagiskManager
 # Magisk
