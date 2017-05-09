@@ -113,6 +113,13 @@ PRODUCT_PACKAGES += \
     ntfsfix \
     ntfs-3g
 
+# MusicFX advanced effects
+ifneq ($(TARGET_NO_DSPMANAGER), true)
+PRODUCT_PACKAGES += \
+    libcyanogen-dsp \
+    audio_effects.conf
+endif
+
 # Custom off-mode charger
 ifneq ($(WITH_CM_CHARGER),false)
 PRODUCT_PACKAGES += \
