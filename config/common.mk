@@ -100,7 +100,8 @@ PRODUCT_PACKAGES += \
     OmniJaws \
     OmniStyle \
     Turbo \
-    GZRoms
+    GZRoms \
+    Nova
 
 # Extra tools
 PRODUCT_PACKAGES += \
@@ -147,10 +148,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
    vendor/validus/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
 endif
-
-# NovaLauncher
-PRODUCT_COPY_FILES += \
-vendor/validus/prebuilt/common/app/Nova.apk:system/app/Nova.apk
 
 # Adaway
 PRODUCT_COPY_FILES += \
