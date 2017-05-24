@@ -99,7 +99,8 @@ PRODUCT_PACKAGES += \
     Eleven \
     OmniSwitch \
     OmniJaws \
-    OmniStyle
+    OmniStyle \
+    Turbo
 
 # Extra tools
 PRODUCT_PACKAGES += \
