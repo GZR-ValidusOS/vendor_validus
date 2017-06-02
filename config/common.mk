@@ -92,7 +92,6 @@ PRODUCT_PACKAGES += \
     Calculator \
     LatinIME \
     BluetoothExt \
-    SlimOTA \
     WolvesDen \
     ThemeInterfacer \
     KernelAdiutor \
@@ -100,7 +99,8 @@ PRODUCT_PACKAGES += \
     OmniSwitch \
     OmniJaws \
     OmniStyle \
-    Turbo
+    Turbo \
+    GZRoms
 
 # Extra tools
 PRODUCT_PACKAGES += \
