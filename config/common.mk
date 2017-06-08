@@ -76,7 +76,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Basic \
     LiveWallpapersPicker \
-    PhaseBeam 
+    PhaseBeam
 
 # Include explicitly to work around GMS issues
 PRODUCT_PACKAGES += \
@@ -212,7 +212,7 @@ endif
 # validus first version.
 PRODUCT_VERSION_MAJOR = 7.1.2
 PRODUCT_VERSION_MINOR = RC
-PRODUCT_VERSION_MAINTENANCE = 14.2
+PRODUCT_VERSION_MAINTENANCE = 14.5
 VALIDUS_POSTFIX := -$(shell date +"%Y%m%d-%H%M")
 ifdef VALIDUS_BUILD_EXTRA
     VALIDUS_POSTFIX := -$(VALIDUS_BUILD_EXTRA)
