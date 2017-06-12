@@ -1,0 +1,36 @@
+#!/bin/sh
+
+# Exports
+
+. $ANDROID_BUILD_TOP/vendor/validus/tools/colors
+projects=$ANDROID_BUILD_TOP/vendor/validus/tools/projects_validus
+
+export Changelog=Changelog_Validus.txt
+
+if [ -f $Changelog ];
+then
+	rm -f $Changelog
+fi
+
+touch $Changelog
+
+# Print something to build output
+echo ${bldppl}"Generating changelog..."${txtrst}
+
+# Generate the changelog for 15 days
+for i in $(seq 15);
+do
+export After_Date=`date --date="$i days ago" +%m-%d-%Y`
+k=$(expr $i - 1)
+	export Until_Date=`date --date="$k days ago" +%m-%d-%Y`
+
+	# Line with after --- until was too long for a small ListView
+	echo '====================' >> $Changelog;
+	echo  "     "$Until_Date       >> $Changelog;
+	echo '===================='	>> $Changelog;
+	echo >> $Changelog;
+
+	# Cycle through every repo to find commits between 2 dates
+	repo forall $(cat $projects) -pc 'git log --oneline --after=$After_Date --until=$Until_Date' >> $Changelog
+	echo >> $Changelog;
+done
