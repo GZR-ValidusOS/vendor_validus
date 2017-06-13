@@ -1,0 +1,234 @@
+====================
+     06-13-2017
+====================
+
+
+   * build/
+a565efd envi: changelog generation added
+
+   * packages/apps/KernelAdiutor/
+a85796f Merge pull request #2 from TeslaRom-N/n7.1.1
+
+   * vendor/validus/
+19e2ab6 script: generate changelog for last 15days
+2e28df8 Remove duplicates from the    * repos
+d6dba01 Add the    *s list
+4d1eabe Fix paths for Nova and GzrApp
+fa44dbc Update GZRApp 3.1
+acaf728 Do not sign the prebuilt apps again
+6c0c732 GZRoms App - signed v3.0
+0716163 Move Nova to BUILD_PREBUILT
+fd3c46a Include GZRoms App into the builds and remove Slim OTA
+
+====================
+     06-12-2017
+====================
+
+
+====================
+     06-11-2017
+====================
+
+
+   * frameworks/base/
+635a26d Read battery LED overlay during BatteryService initialization
+5bb0ec5 fingerprint: handle PerformanceStats NULL pointers
+db9b478 Reduce hwui CPU time by using glDrawRangeElements
+0bd3289 fingerprint: Speed up wake-and-unlock scenario
+
+   * packages/apps/DUI/
+206093c Pulse: Navbar left in landscape support
+
+   * packages/apps/Messaging/
+f565d34 Merge tag 'android-7.1.2_r17' into n7.1.2
+
+   * system/core/
+ebb60d1 system: core: sched: Fix missing }
+215c36a sched: Update on par with Lineage
+
+====================
+     06-10-2017
+====================
+
+
+   * frameworks/base/
+309b5c7 Add ability to configure battery saver mode color (1/2) Adapted for marshmallow by @KreAch3R
+
+   * packages/apps/WolvesDen/
+8806f6d GZR Colors into default in the ColorPicker
+f6a0fd0 Add ability to configure battery saver mode color (2/2)
+
+====================
+     06-09-2017
+====================
+
+
+   * vendor/validus/
+f0a8bbd v14.5 because users
+
+====================
+     06-08-2017
+====================
+
+
+   * vendor/validus/
+14578ed Update Nova 5.2
+
+====================
+     06-07-2017
+====================
+
+
+   * build/
+9e0512c [DO NOT MERGE] Update Security String to 2017-06-05 for nyc-dev
+0746b65 Version bump to NJH47B
+
+   * frameworks/base/
+0d29e6d Fix issue with saving admins before finishing loading.
+6fe0c54 resolve merge conflicts of ad4aa1ce7d3d to nyc-mr1-dev fix conflict in nyc-mr2-release (cherry picked from commit f806d65e615b942c268a5f68d44bde9d55634972)
+6dddd4a Repair build
+
+   * hardware/qcom/audio-caf/msm8996/
+2c343db msm8996: ultrasound: Initial open source hal for Elliptic Ultrasound
+6e2beb0 audio policy: reduce audio routing commands trafic
+
+   * hardware/qcom/display-caf/msm8996/
+0f92b9a Merge "sdm: Set layer frame rate if not specified."
+e00d283 sdm: Increase SurfaceFlinger fd limits
+
+   * hardware/qcom/media-caf/msm8996/
+fd47554 mm-video-v4l2: venc: Initialize allocate native handle variable
+87bbde9 mm-video-v4l2: Initialize extradata fd to -1
+d568144 mm-video-v4l2: venc: Fix double close on fd
+91569c2 mm-video-v4l2: Close output buffer dup fd only if valid
+939e293 mm-video-v4l2: create pthread with valid file descriptors
+698defc Merge tag 'LA.UM.5.5.r1-03800-8x96.0' into cm-14.1-caf-8996
+a040978 mm-video-v4l2: vidc: correct the crop update
+6b11d95 Merge 69058718422addd0dc9c2ebfc6857d0ebd22d6ca on remote branch
+
+   * libcore/
+28f306c Reject ftp URLConnection containing /r/n in user info.
+8b81061 Test for rejection of ftp URL with /r/n in userinfo
+
+   * manifest/
+c7fcfbd Manifest: android-7.1.2_r17
+
+   * packages/apps/Bluetooth/
+4e0ba9e BluetoothOppTransferActivity: fix after ad46f6a52d7240ed1e2127c4263a5cbcf454df09
+7e9eaf5 Merge tag 'android-7.1.2_r17' into cm-14.1
+
+   * packages/apps/KernelAdiutor/
+d386afb Merge pull request #1 from Druboo666/n7.1.1
+
+   * packages/apps/Settings/
+ccc8aeb Looks better here
+3c1dd8b Integrate GZApp into settings
+
+   * system/bt/
+f33d8e4 Check LE advertising data length before caching advertising records
+
+   * system/core/
+8159afb Fix out of bound read in libziparchive
+ca1f9c1 libcutils: remove schedgroup fds [DO NOT MERGE]
+
+====================
+     06-06-2017
+====================
+
+
+   * frameworks/base/
+9780dea Slim Recents: allow to disable round corners for cards [1/3]
+cf06503 Optimised hwui rounded corners shader
+683191a SystemUI: Support recents task locking
+c66ad2e Fix SystemUI FC due to Google Assistant
+
+   * manifest/
+5e8f25f add cm's external_bson
+
+   * packages/apps/DUI/
+a5e8fca SmartBar: Touch sound support
+
+   * packages/apps/MusicFX/
+4c2fb8c Improve the overall layout of MusicFX
+
+   * packages/apps/SlimRecents/
+f15c76e Slim Recents: allow to disable round corners for cards [2/3]
+89f9fb3 New app-pinning icon
+e6e972d Show PlayStore option also for system gapps and manually installed apk
+
+   * packages/apps/WolvesDen/
+c097231 Slim Recents: allow to disable round corners for cards [3/3]
+
+   * system/sepolicy/
+1e4df9d Add policy to fix interfacer derp on boot
+
+====================
+     06-05-2017
+====================
+
+
+   * frameworks/base/
+be88292 Merge pull request #11 from psyafter/n7.1.2
+a8bceff Fix double ")"
+53eb43e Fix "unresolved link in annotation {@link android.provider.Settings.Global#KEY_SMS_BREATH}"
+
+   * packages/apps/KernelAdiutor/
+0033068 CPU: Stop assuming all 4 core cpus are big/little
+4f69fcc Revert "Fix calculation of big.LITTLE cores on SD82*"
+
+   * vendor/validus/
+c921065 add gemini for Robert
+fb0b5d4 Merge pull request #5 from psyafter/n7.1.2
+c0bc08b add herolte
+
+====================
+     06-04-2017
+====================
+
+
+====================
+     06-03-2017
+====================
+
+
+====================
+     06-02-2017
+====================
+
+
+   * frameworks/base/
+ce89a84 daynight: try to fix the ugly white in notifications
+
+   * vendor/validus/
+7c3eb30 overlay: Enable Wi-Fi by default on first boot
+dbec0ba Update example backup-transport resource overlay
+
+====================
+     06-01-2017
+====================
+
+
+   * hardware/libhardware/
+6f3b387 hardware: Enable Soter for Android N
+57a220b audio: add parameter for device shutdown notification
+
+====================
+     05-31-2017
+====================
+
+
+   * system/keymaster/
+d6b44dd keymaster: Enable Soter for Android N
+
+====================
+     05-30-2017
+====================
+
+
+   * manifest/
+c1f30c5 ril-caf: 7.1.2-caf branch
+
+   * packages/apps/MusicFX/
+ff627f0 Modify the MusicFX landscape layout
+996728d Recentralize spinners and change layout
+
