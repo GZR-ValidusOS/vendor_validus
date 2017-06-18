@@ -483,7 +483,6 @@ platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8
 platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9
 platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8
 GZR-ValidusOS/arm-eabi-4.9
-DespairFactor/arm-eabi-5.x
 ExistanceVIP/arm-eabi-6.x
 platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9
 platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8
