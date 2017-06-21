@@ -101,7 +101,8 @@ PRODUCT_PACKAGES += \
     OmniStyle \
     Turbo \
     GZRoms \
-    Nova
+    Nova \
+    NovaGoogleCompanion
 
 # Extra tools
 PRODUCT_PACKAGES += \
