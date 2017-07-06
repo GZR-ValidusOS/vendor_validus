@@ -234,7 +234,6 @@ platform/external/oauth
 platform/external/objenesis
 platform/external/okhttp
 platform/external/opencv
-platform/external/opencv3
 external_openssh
 platform/external/owasp/sanitizer
 platform/external/parameter-framework
@@ -497,7 +496,6 @@ platform/prebuilts/misc
 platform/prebuilts/ndk
 platform/prebuilts/ninja/linux-x86
 platform/prebuilts/python/linux-x86/2.7.5
-platform/prebuilts/qemu-kernel
 platform/prebuilts/sdk
 platform/prebuilts/tools
 platform/sdk

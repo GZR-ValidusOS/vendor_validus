@@ -1,19 +1,77 @@
 ====================
-     07-03-2017
+     07-07-2017
 ====================
 
 
+   * bionic/
+2b6d86199  Merge tag 'android-7.1.2_r23' into n7.1.2  [Prema Chand Alugu]
+   * build/
+ffcacd4cc  Make change and version bump to NHG47O  [Prema Chand Alugu]
+69596ca21  [DO NOT MERGE]Updating security string to 2017-07-05 on nyc-dev bug:38342695 (cherry picked from commit 96d958c34509a65e5f7787945f9923fb44c42f05)  [Prema Chand Alugu]
+43b232a20  [DO NOT MERGE]Updating security string to 2017-07-01 on nyc-dev bug:38342695 (cherry picked from commit 77dad3dfcd677136f6657e1b95dd84ed1be1d728)  [Prema Chand Alugu]
+a1be62396  NHG47N  [Prema Chand Alugu]
+f97e037e1  NHG47M  [Prema Chand Alugu]
+   * external/skia/
+b932f7496  Set a limit on the size for BMP images DO NOT MERGE  [GtrCraft]
+   * frameworks/av/
+a3b70d139  Fix memory leak in error case  [Prema Chand Alugu]
+50eca4e5c  Modifying MetaData invalidates previous char*  [Prema Chand Alugu]
+b4dd59722  Limit ogg packet size  [Prema Chand Alugu]
+5ea6cd60b  Prevent OOB write in soft_avc encoder  [Prema Chand Alugu]
+7974d218d  Don't allow using or allocating a buffer after the first state transition  [Prema Chand Alugu]
    * frameworks/base/
-9a33d5021cb  Merge pull request #12 from xX-Yoshi-Xx/n7.1.2  [GitHub]
+fdb6a829e70  ZygoteInit: Remove CAP_SYS_RESOURCE  [Prema Chand Alugu]
+850fea95ac5  system_server: add CAP_SYS_PTRACE  [Prema Chand Alugu]
+17b1b41b532  Fix re-enabling alert window appop after leaving VR mode.  [Prema Chand Alugu]
+60516b36985  Make a11y node info parceling more robust  [Prema Chand Alugu]
+   * frameworks/native/
+3e72ff455  libgui: check for invalid slot in attachBuffer  [Prema Chand Alugu]
+6d19a4d34  libgui: Check slot received from IGBP in Surface  [Prema Chand Alugu]
+5b44f83b9  ui: Fix bad size check in Fence::unflatten  [Prema Chand Alugu]
+   * libcore/
+7c1123228  Proper fix for rejecting ftp URL with /r/n.  [Prema Chand Alugu]
    * manifest/
-97d8df7  track 8998 HALs from Tesla  [Martinusbe]
+149d236  7.1.2_r23  [Prema Chand Alugu]
    * packages/apps/Settings/
-0370ec017  Merge pull request #4 from xX-Yoshi-Xx/n7.1.2  [GitHub]
-   * packages/apps/WolvesDen/
-6de9570  Let button backlight settings depend on Hwkeys  [Alx31]
-c5adc9e  Merge pull request #3 from xX-Yoshi-Xx/n7.1.2  [GitHub]
+821687a73  Fix phishing attack in ChooseLockGeneric  [Prema Chand Alugu]
+0d52acce2  resolve merge conflicts of 3964c51bf2 to nyc-dev  [Prema Chand Alugu]
+   * packages/providers/DownloadProvider/
+4cdcaac  DO NOT MERGE Deleting downloads for removed uids on downloadprovider start  [Prema Chand Alugu]
+   * packages/providers/MediaProvider/
+c7b0718  [DO NOT MERGE] Enforce user separation on external storage  [Prema Chand Alugu]
+   * system/sepolicy/
+c9e8376  system_server: replace sys_resource with sys_ptrace  [Prema Chand Alugu]
 ====================
-     07-02-2017
+     07-06-2017
+====================
+
+
+====================
+     07-05-2017
+====================
+
+
+   * packages/apps/WolvesDen/
+018a7eb  Merge pull request #6 from xX-Yoshi-Xx/n7.1.2  [GitHub]
+0aa4f5a  Quick Settings: Tile animations setSelectable -> setEnabled  [Raleigh Matlock]
+0426ef7  Merge pull request #4 from xX-Yoshi-Xx/n7.1.2  [GitHub]
+====================
+     07-04-2017
+====================
+
+
+   * hardware/qcom/keymaster/
+7ff4f5d  keymaster: add msm8996 into support list  [Martinusbe]
+a3428ba  keymaster: add msm8998 into support list  [Martinusbe]
+   * manifest/
+27e262d  remove prebuilts/qemu-kernel  [martin]
+   * packages/apps/WolvesDen/
+362d9b2  Recents: Disable categories based upon which option is used  [Raleigh Matlock]
+6de9570  Let button backlight settings depend on Hwkeys  [Alx31]
+   * vendor/validus/
+5f45b65  update changelog  [Prema Chand Alugu]
+====================
+     07-03-2017
 ====================
 
 
@@ -40,6 +98,20 @@ f2f533eea  Set __ARM_ARCH__ correctly for ARMv8 32bit builds  [Martinusbe]
 9d84cd2  Revert "Allow devices to specify a default decay time"  [Martinusbe]
 7f654f0  Avoid a potential innocuous compiler warning.  [Martinusbe]
    * frameworks/base/
+9a33d5021cb  Merge pull request #12 from xX-Yoshi-Xx/n7.1.2  [GitHub]
+   * manifest/
+97d8df7  track 8998 HALs from Tesla  [Martinusbe]
+   * packages/apps/Settings/
+0370ec017  Merge pull request #4 from xX-Yoshi-Xx/n7.1.2  [GitHub]
+   * packages/apps/WolvesDen/
+c5adc9e  Merge pull request #3 from xX-Yoshi-Xx/n7.1.2  [GitHub]
+b7a49e9  Validus clean up (2/3)  [Raleigh Matlock]
+====================
+     07-02-2017
+====================
+
+
+   * frameworks/base/
 3b74a03798a  Validus clean up (3/3)  [Raleigh Matlock]
    * hardware/qcom/audio-caf/msm8998/
 227036d1e  hal: Allow building hardware audio encoders  [Martinusbe]
@@ -54,8 +126,8 @@ efc4d64c0  venc: Fix VQZip issue  [Martinusbe]
 af5a982a4  media: Avoid collision with FFMPEG plugin  [Martinusbe]
 ebd720eea  vidc: Fix makefiles  [Martinusbe]
 a023385c1  media: Use    * pathmap  [Martinusbe]
-   * packages/apps/WolvesDen/
-b7a49e9  Validus clean up (2/3)  [Raleigh Matlock]
+   * packages/apps/Settings/
+1dc5c25ec  Validus clean up (1/3)  [Raleigh Matlock]
    * vendor/validus/
 655bd99  devices: oneplus5 < cheeseburger  [Martinusbe]
 ====================
@@ -63,8 +135,6 @@ b7a49e9  Validus clean up (2/3)  [Raleigh Matlock]
 ====================
 
 
-   * packages/apps/Settings/
-1dc5c25ec  Validus clean up (1/3)  [Raleigh Matlock]
 ====================
      06-30-2017
 ====================
@@ -77,13 +147,13 @@ b7a49e9  Validus clean up (2/3)  [Raleigh Matlock]
 
    * packages/apps/WolvesDen/
 78129c0  Navigation buttons backlight - misc changes  [Prema Chand Alugu]
+   * packages/providers/ContactsProvider/
+1ef7feec  Fix merge derp  [Martinusbe]
 ====================
      06-28-2017
 ====================
 
 
-   * packages/providers/ContactsProvider/
-1ef7feec  Fix merge derp  [Martinusbe]
 ====================
      06-27-2017
 ====================
@@ -122,45 +192,8 @@ accecef  Add Nova Google Companion 1.0  [Prema Chand Alugu]
 ====================
 
 
+   * packages/apps/WolvesDen/
+79a2479  Set navigation buttons backlight timeout  [Prema Chand Alugu]
    * vendor/validus/
 313d5a0  v14.6 one up  [GitHub]
 f38dda4  NovaLauncher_5.3-beta3  [Martinusbe]
-====================
-     06-22-2017
-====================
-
-
-   * packages/apps/WolvesDen/
-79a2479  Set navigation buttons backlight timeout  [Prema Chand Alugu]
-====================
-     06-21-2017
-====================
-
-
-   * frameworks/base/
-de765a6dcad  Set navigation buttons backlight brightness [1/2]  [Prema Chand Alugu]
-   * packages/apps/WolvesDen/
-9aac310  Set navigation buttons backlight brightness [2/2]  [Prema Chand Alugu]
-====================
-     06-20-2017
-====================
-
-
-   * vendor/validus/
-0564cfd  update changelog  [Prema Chand Alugu]
-a7e94cd  changelog_tipsy: more info and bling  [Prema Chand Alugu]
-2e03439     *s: remove despair tc  [Prema Chand Alugu]
-====================
-     06-19-2017
-====================
-
-
-   * frameworks/base/
-4855954e2b9  Night mode auto brightness: code cleanup and improvements [1/2]  [Prema Chand Alugu]
-   * packages/apps/Settings/
-a8a20108f  Night mode auto brightness: code cleanup and improvements [2/2]  [Prema Chand Alugu]
-6d1789890  Night ligh auto brightness: menu improvements  [Prema Chand Alugu]
-7a9f73344  Allow sorting applications by size  [Prema Chand Alugu]
-49900bd87  Settings: enable fast scroll for all app list views  [Prema Chand Alugu]
-2020fee65  AD custom brightness: min value will be the device default  [Prema Chand Alugu]
-1465cf045  Always show screen on time  [Prema Chand Alugu]
