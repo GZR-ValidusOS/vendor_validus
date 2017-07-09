@@ -161,10 +161,6 @@ endif
 #ifeq ($(DEFAULT_ROOT_METHOD),rootless)
 #endif
 
-# Adaway
-PRODUCT_COPY_FILES += \
-vendor/validus/prebuilt/common/app/adaway.apk:system/app/adaway.apk
-
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
     libffmpeg_extractor \
