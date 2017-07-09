@@ -140,15 +140,7 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     org.dirtyunicorns.utils
 
-ifeq ($(DEFAULT_ROOT_METHOD),supersu)
-# SuperSU
-PRODUCT_COPY_FILES += \
-  vendor/validus/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
-   vendor/validus/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
-endif
-
-ifeq ($(DEFAULT_ROOT_METHOD),rootless)
-else
+ifeq ($(DEFAULT_ROOT_METHOD),magisk)
 # Magisk Manager --> default root method
 PRODUCT_PACKAGES += \
     MagiskManager
@@ -156,6 +148,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
    vendor/validus/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
 endif
+
+ifeq ($(DEFAULT_ROOT_METHOD),supersu)
+# SuperSU
+PRODUCT_COPY_FILES += \
+  vendor/validus/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+   vendor/validus/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+endif
+
+# Explict rootless defined, or none of the root methods defined,
+# default rootless : nothing todo
+#ifeq ($(DEFAULT_ROOT_METHOD),rootless)
+#endif
 
 # Adaway
 PRODUCT_COPY_FILES += \
