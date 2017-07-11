@@ -24,13 +24,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.debug.alloc=0
 
-# Backup Tool
+# Backup tool
 PRODUCT_COPY_FILES += \
     vendor/validus/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/validus/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/validus/prebuilt/common/bin/50-validus.sh:system/addon.d/50-validus.sh
 
-# Backup Services whitelist
+# Backup services whitelist
 PRODUCT_COPY_FILES += \
     vendor/validus/config/permissions/backup.xml:system/etc/sysconfig/backup.xml
 
@@ -38,11 +38,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/validus/prebuilt/common/bin/otasigcheck.sh:install/bin/otasigcheck.sh
 
-# validus-specific init file
+# Validus-specific init file
 PRODUCT_COPY_FILES += \
     vendor/validus/prebuilt/common/etc/init.local.rc:root/init.validus.rc
 
-# Copy latinime for gesture typing
+# Copy LatinIME for gesture typing
 PRODUCT_COPY_FILES += \
     vendor/validus/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
 
@@ -59,6 +59,7 @@ PRODUCT_COPY_FILES += \
     vendor/validus/prebuilt/common/etc/mkshrc:system/etc/mkshrc \
     vendor/validus/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf
 
+# Validus-specific startup services
 PRODUCT_COPY_FILES += \
     vendor/validus/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
     vendor/validus/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit \
@@ -132,18 +133,19 @@ PRODUCT_PACKAGES += \
     libhealthd.cm
 endif
 
-# DU Utils Library
+# DU Utils library
 PRODUCT_BOOT_JARS += \
     org.dirtyunicorns.utils
 
-# DU Utils Library
+# DU Utils library
 PRODUCT_PACKAGES += \
     org.dirtyunicorns.utils
 
 ifeq ($(DEFAULT_ROOT_METHOD),magisk)
-# Magisk Manager --> default root method
+# Magisk Manager
 PRODUCT_PACKAGES += \
     MagiskManager
+
 # Magisk
 PRODUCT_COPY_FILES += \
    vendor/validus/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
@@ -152,7 +154,7 @@ endif
 ifeq ($(DEFAULT_ROOT_METHOD),supersu)
 # SuperSU
 PRODUCT_COPY_FILES += \
-  vendor/validus/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+   vendor/validus/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
    vendor/validus/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 endif
 
