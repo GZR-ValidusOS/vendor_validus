@@ -95,7 +95,6 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     WolvesDen \
     ThemeInterfacer \
-    KernelAdiutor \
     Eleven \
     OmniSwitch \
     OmniJaws \
@@ -148,7 +147,7 @@ PRODUCT_PACKAGES += \
 
 # Magisk
 PRODUCT_COPY_FILES += \
-   vendor/validus/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
+   vendor/validus/prebuilt/common/addon.d/magisk.zip:system/addon.d/magisk.zip
 endif
 
 ifeq ($(DEFAULT_ROOT_METHOD),supersu)
