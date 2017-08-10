@@ -408,11 +408,9 @@ platform/packages/apps/Email
 platform/packages/apps/EmergencyInfo
 platform/packages/apps/ExactCalculator
 packages_apps_FMRadio
-FloatingActionButton
 platform/packages/apps/Gallery
 packages_apps_Gallery2
 platform/packages/apps/HTMLViewer
-KernelAdiutor
 platform/packages/apps/KeyChain
 platform/packages/apps/LegacyCamera
 packages_apps_LockClock

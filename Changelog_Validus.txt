@@ -1,199 +1,134 @@
 ====================
-     07-07-2017
+     08-10-2017
 ====================
 
 
-   * bionic/
-2b6d86199  Merge tag 'android-7.1.2_r23' into n7.1.2  [Prema Chand Alugu]
    * build/
-ffcacd4cc  Make change and version bump to NHG47O  [Prema Chand Alugu]
-69596ca21  [DO NOT MERGE]Updating security string to 2017-07-05 on nyc-dev bug:38342695 (cherry picked from commit 96d958c34509a65e5f7787945f9923fb44c42f05)  [Prema Chand Alugu]
-43b232a20  [DO NOT MERGE]Updating security string to 2017-07-01 on nyc-dev bug:38342695 (cherry picked from commit 77dad3dfcd677136f6657e1b95dd84ed1be1d728)  [Prema Chand Alugu]
-a1be62396  NHG47N  [Prema Chand Alugu]
-f97e037e1  NHG47M  [Prema Chand Alugu]
-   * external/skia/
-b932f7496  Set a limit on the size for BMP images DO NOT MERGE  [GtrCraft]
+3a559eb  Version bump to NJH47F  [Martinusbe]
+9b9fe53  [DO NOT MERGE] Updating Security String to 2017-08-05 on nyc-dev bug:62388772 (cherry picked from commit 2b93753bc4025e92e6b6c8ed510bc9b3f8faff4d)  [Martinusbe]
+b9f1848  [DO NOT MERGE] Updating Security String to 2017-08-01 on nyc-dev bug:62388772 (cherry picked from commit a847c0b23ce761b09148f4f8fd6c9b473a46f531)  [Martinusbe]
+89c3362  Version bump to NJH47D  [Martinusbe]
    * frameworks/av/
-a3b70d139  Fix memory leak in error case  [Prema Chand Alugu]
-50eca4e5c  Modifying MetaData invalidates previous char*  [Prema Chand Alugu]
-b4dd59722  Limit ogg packet size  [Prema Chand Alugu]
-5ea6cd60b  Prevent OOB write in soft_avc encoder  [Prema Chand Alugu]
-7974d218d  Don't allow using or allocating a buffer after the first state transition  [Prema Chand Alugu]
+907a599  Fix security vulnerability: Equalizer setParameter memory overflow  [Martinusbe]
+477b4c6  RESTRICT AUTOMERGE Check the buffer index from acquireBuffer  [Martinusbe]
+5bd6987  better manage buffer for libstagefright_soft_mpeg4enc  [Martinusbe]
+7201a4b  m4v_h263: update width/height only when they are valid.  [Martinusbe]
+8d5d2f0  m4v_h263: check header first before decoding a frame.  [Martinusbe]
+7071fd6  Fix integer overflow in mediadrmserver  [Martinusbe]
+c7ffb08  Fix potential leak  [Martinusbe]
+0e6ee82  DO NOT MERGE Don't leak `this` out of GraphicBufferSource ctor  [Martinusbe]
+5d83ff8  CameraService: Fix cameraId type of onDeviceStatusChanged  [Martinusbe]
    * frameworks/base/
-fdb6a829e70  ZygoteInit: Remove CAP_SYS_RESOURCE  [Prema Chand Alugu]
-850fea95ac5  system_server: add CAP_SYS_PTRACE  [Prema Chand Alugu]
-17b1b41b532  Fix re-enabling alert window appop after leaving VR mode.  [Prema Chand Alugu]
-60516b36985  Make a11y node info parceling more robust  [Prema Chand Alugu]
+a32bdd5  Close connection before retrying  [Martinusbe]
+260bd12  Fix issue with saving admins before finishing loading.  [Martinusbe]
+89b0a77  resolve merge conflicts of ad4aa1ce7d3d to nyc-mr1-dev fix conflict in nyc-mr2-release  [Martinusbe]
    * frameworks/native/
-3e72ff455  libgui: check for invalid slot in attachBuffer  [Prema Chand Alugu]
-6d19a4d34  libgui: Check slot received from IGBP in Surface  [Prema Chand Alugu]
-5b44f83b9  ui: Fix bad size check in Fence::unflatten  [Prema Chand Alugu]
-   * libcore/
-7c1123228  Proper fix for rejecting ftp URL with /r/n.  [Prema Chand Alugu]
+9cbefd8  fix race condition that can cause a use after free  [Martinusbe]
    * manifest/
-149d236  7.1.2_r23  [Prema Chand Alugu]
-   * packages/apps/Settings/
-821687a73  Fix phishing attack in ChooseLockGeneric  [Prema Chand Alugu]
-0d52acce2  resolve merge conflicts of 3964c51bf2 to nyc-dev  [Prema Chand Alugu]
-   * packages/providers/DownloadProvider/
-4cdcaac  DO NOT MERGE Deleting downloads for removed uids on downloadprovider start  [Prema Chand Alugu]
-   * packages/providers/MediaProvider/
-c7b0718  [DO NOT MERGE] Enforce user separation on external storage  [Prema Chand Alugu]
-   * system/sepolicy/
-c9e8376  system_server: replace sys_resource with sys_ptrace  [Prema Chand Alugu]
-====================
-     07-06-2017
-====================
-
-
-====================
-     07-05-2017
-====================
-
-
-   * packages/apps/WolvesDen/
-018a7eb  Merge pull request #6 from xX-Yoshi-Xx/n7.1.2  [GitHub]
-0aa4f5a  Quick Settings: Tile animations setSelectable -> setEnabled  [Raleigh Matlock]
-0426ef7  Merge pull request #4 from xX-Yoshi-Xx/n7.1.2  [GitHub]
-====================
-     07-04-2017
-====================
-
-
-   * hardware/qcom/keymaster/
-7ff4f5d  keymaster: add msm8996 into support list  [Martinusbe]
-a3428ba  keymaster: add msm8998 into support list  [Martinusbe]
-   * manifest/
-27e262d  remove prebuilts/qemu-kernel  [martin]
-   * packages/apps/WolvesDen/
-362d9b2  Recents: Disable categories based upon which option is used  [Raleigh Matlock]
-6de9570  Let button backlight settings depend on Hwkeys  [Alx31]
+f1895a0  7.1.2_r33  [Martinusbe]
    * vendor/validus/
-5f45b65  update changelog  [Prema Chand Alugu]
+550f6e8  v15.0 for August big security update  [Martinusbe]
 ====================
-     07-03-2017
-====================
-
-
-   * bionic/
-a3fd21ff0  Revert "libm: add AArch32 math instructions"  [Martinusbe]
-8abde0d86  Don't declare SYS_* constants for unavailable __NR_* constants.  [Martinusbe]
-1029fbc3e  Move glibc-syscalls.h into bits/.  [Martinusbe]
-7c77cde6c  Fix 6839c9a37a027da3bba9ca33fdf445eed02ad381  [Martinusbe]
-cd9694ea5  libc: import ARM strcmp from newlib  [Martinusbe]
-a533694ee  libc: arm: add NEON-optimized memchr implementation from newlib  [Martinusbe]
-dbfd80a89  libc: add optimized ARM64 strrchr from newlib  [Martinusbe]
-f2f533eea  Set __ARM_ARCH__ correctly for ARMv8 32bit builds  [Martinusbe]
-82fa25403  Fix "Unknown token error" when upstream clang is used.  [Martinusbe]
-9e72a0a38  libm: add AArch32 math instructions  [Martinusbe]
-9bc3c544d  libm: add more aarch64 hardware instructions  [Martinusbe]
-6cf87524d  linker: convert 'mov pc' instruction to 'bx'  [Martinusbe]
-4fc181e6b  bionic: arm64: generic: strcmp: align to cache and preload  [Martinusbe]
-5a42c7363  libc: ARM: add Apple strcmp  [Martinusbe]
-49844f11e  libc: import ARM strlen from Apple C library  [Martinusbe]
-55e76471c  Speed-up ARM memcmp by leveraging NEON.  [Martinusbe]
-4f04cadbb  Add support for modifying decay timer.  [Martinusbe]
-   * external/jemalloc/
-9013e45  Change the decay timer default to 0.  [Martinusbe]
-9d84cd2  Revert "Allow devices to specify a default decay time"  [Martinusbe]
-7f654f0  Avoid a potential innocuous compiler warning.  [Martinusbe]
-   * frameworks/base/
-9a33d5021cb  Merge pull request #12 from xX-Yoshi-Xx/n7.1.2  [GitHub]
-   * manifest/
-97d8df7  track 8998 HALs from Tesla  [Martinusbe]
-   * packages/apps/Settings/
-0370ec017  Merge pull request #4 from xX-Yoshi-Xx/n7.1.2  [GitHub]
-   * packages/apps/WolvesDen/
-c5adc9e  Merge pull request #3 from xX-Yoshi-Xx/n7.1.2  [GitHub]
-b7a49e9  Validus clean up (2/3)  [Raleigh Matlock]
-====================
-     07-02-2017
+     08-09-2017
 ====================
 
 
-   * frameworks/base/
-3b74a03798a  Validus clean up (3/3)  [Raleigh Matlock]
+   * external/skia/
+e8e31f0  Stop supporting kUnknown_BmpHeaderType DO NOT MERGE  [Mirko]
+   * frameworks/opt/net/wifi/
+3711830  cherry-pick: wifinative jni: check array length for trackSignificantWifiChange  [Mirko]
+   * hardware/qcom/audio-caf/msm8996/
+53154f2  Fix security vulnerability: Equalizer setParameter memory overflow  [Martinusbe]
    * hardware/qcom/audio-caf/msm8998/
-227036d1e  hal: Allow building hardware audio encoders  [Martinusbe]
-9e7f3aa5a  fix build error  [Martinusbe]
-2948e7090  audio: Use direct    * pathmap  [Martinusbe]
-   * hardware/qcom/display-caf/msm8998/
-57c7c0e49  Don't build lights module if vendor supplies it  [Martinusbe]
-b40bed75f  display: Use    * pathmap  [Martinusbe]
-   * hardware/qcom/media-caf/msm8998/
-2e56a44d6  mm-video: Disable proprietary extension  [Martinusbe]
-efc4d64c0  venc: Fix VQZip issue  [Martinusbe]
-af5a982a4  media: Avoid collision with FFMPEG plugin  [Martinusbe]
-ebd720eea  vidc: Fix makefiles  [Martinusbe]
-a023385c1  media: Use    * pathmap  [Martinusbe]
-   * packages/apps/Settings/
-1dc5c25ec  Validus clean up (1/3)  [Raleigh Matlock]
-   * vendor/validus/
-655bd99  devices: oneplus5 < cheeseburger  [Martinusbe]
+78a1d00  Fix security vulnerability: Equalizer setParameter memory overflow  [Martinusbe]
+   * hardware/qcom/audio/default/
+550cb49  Merge tag 'android-7.1.2_r33' into n7.1.2  [Mirko]
 ====================
-     07-01-2017
-====================
-
-
-====================
-     06-30-2017
-====================
-
-
-====================
-     06-29-2017
-====================
-
-
-   * packages/apps/WolvesDen/
-78129c0  Navigation buttons backlight - misc changes  [Prema Chand Alugu]
-   * packages/providers/ContactsProvider/
-1ef7feec  Fix merge derp  [Martinusbe]
-====================
-     06-28-2017
-====================
-
-
-====================
-     06-27-2017
+     08-08-2017
 ====================
 
 
    * frameworks/base/
-95f5bbb9036  telephony: Hack GSM and LTE signal strength  [Prema Chand Alugu]
+d4d15ab  Make Data/Wifi activity icon in statusbar optional  [Prema Chand Alugu]
 ====================
-     06-26-2017
-====================
-
-
-====================
-     06-25-2017
+     08-07-2017
 ====================
 
 
-   * device/qcom/common/
-efdc267  power: add msm8998 support from CAF tag LA.UM.5.7.r2-00900-8x98.0  [Martinusbe]
-   * device/qcom/sepolicy/
-47c775a  Rename msmcobalt to msm8998  [Martinusbe]
+   * frameworks/base/
+58df5c6  Add signature Spoofing permission  [Martinusbe]
    * vendor/validus/
-4862836  Change Nova companion path  [Prema Chand Alugu]
-b9690ad  Update Nova Google Companion 1.1  [Prema Chand Alugu]
-accecef  Add Nova Google Companion 1.0  [Prema Chand Alugu]
-79e593b  qcom: Automatically set TARGET_USES_COLOR_METADATA for msm8996/8  [Martinusbe]
-17756b4  qcomUtils: add msm8998 as target  [Martinusbe]
-67e6428  devices: add oneplus5  [Martinusbe]
+bc2bbd6  Bye bye RC  [GitHub]
 ====================
-     06-24-2017
+     08-06-2017
 ====================
 
 
 ====================
-     06-23-2017
+     08-05-2017
 ====================
 
 
+   * packages/apps/Messaging/
+ebae08c  Merge pull request #1 from xX-Yoshi-Xx/n7.1.2  [GitHub]
+====================
+     08-04-2017
+====================
+
+
+   * packages/apps/Messaging/
+4e78e32  Breathing missed call/SMS/voicemail: Update drawables  [Raleigh Matlock]
+====================
+     08-03-2017
+====================
+
+
+====================
+     08-02-2017
+====================
+
+
+====================
+     08-01-2017
+====================
+
+
+   * frameworks/base/
+f9e2632  Merge pull request #13 from xX-Yoshi-Xx/n7.1.2  [GitHub]
    * packages/apps/WolvesDen/
-79a2479  Set navigation buttons backlight timeout  [Prema Chand Alugu]
+ad1872f  Merge pull request #7 from xX-Yoshi-Xx/n7.1.2  [GitHub]
    * vendor/validus/
-313d5a0  v14.6 one up  [GitHub]
-f38dda4  NovaLauncher_5.3-beta3  [Martinusbe]
+5eb65c5  Merge pull request #13 from xX-Yoshi-Xx/n7.1.2  [GitHub]
+====================
+     07-31-2017
+====================
+
+
+   * frameworks/base/
+8f5eee8  Set default screenshot delay to 600ms (1/2)  [Raleigh Matlock]
+   * packages/apps/WolvesDen/
+5e19470  Set default screenshot delay to 600ms (2/2)  [Raleigh Matlock]
+   * vendor/validus/
+05189c2  validus: fix denial when setting user profile picture  [Raleigh Matlock]
+====================
+     07-30-2017
+====================
+
+
+====================
+     07-29-2017
+====================
+
+
+====================
+     07-28-2017
+====================
+
+
+====================
+     07-27-2017
+====================
+
+
+   * vendor/validus/
+3505acd  v14.9  [Martinusbe]
