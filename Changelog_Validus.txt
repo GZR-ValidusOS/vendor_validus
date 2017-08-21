@@ -1,5 +1,108 @@
 ====================
-     08-10-2017
+     08-21-2017
+====================
+
+
+   * packages/apps/Dialer/
+5f3b274fd  IMS-VT: Transmit static image when multitasking  [Martinusbe]
+776e6157d  IMS-VT: Send static image in a Video Call  [Martinusbe]
+ce2b9754c  Use TabLayout for DSDA tabs.  [Martinusbe]
+ec0163980  IMS: Do not mute the Mic during add call  [Martinusbe]
+3b807a3df  IMS-VT: Control display of player, video quality, data usage toasts  [Martinusbe]
+   * vendor/codeaurora/telephony/
+bbf0777  IMS-VT: Add config that controls visibility of static Image UI  [Martinusbe]
+   * vendor/validus/
+011c269  going to 15.1  [Martinusbe]
+====================
+     08-20-2017
+====================
+
+
+   * packages/apps/Bluetooth/
+c4a52675  Directly inform Audio HAL regarding SCO state change  [Martinusbe]
+   * system/bt/
+1739c161  AV: Use separate AV sig timeout timer for dual connections.  [Martinusbe]
+8936c7d5  BT : Introduced an internal queue in hci thread to hold commands  [Martinusbe]
+5f357c84  Fix: btapp will crash when pair request from both DUT & Remote device simultaneously  [Martinusbe]
+d259542a  RFCOMM: stop multiplexer disconnect timer while reconnect DLC  [Martinusbe]
+ae1fb27f  Fix time consuming doing Bluetooth OFF/ON while a2dp steaming.  [Martinusbe]
+b125b536  Fix timestamp error in btsnoop log  [Martinusbe]
+ee77c638  check controller state before handling gatt client request.  [Martinusbe]
+2dce4551  SDP: Dont start SDP search with invalid BD Addr  [Martinusbe]
+5f8c53d3  Configure correct remote MTU  [Martinusbe]
+b816483e  audio_a2dp_hw: add audio_a2dp_check_ready for split A2DP  [Martinusbe]
+250dbfe8  bt: enable BT_HOST_IPC_ENABLED for msm8998  [Martinusbe]
+====================
+     08-19-2017
+====================
+
+
+   * frameworks/av/
+80e6ba278  Camera: Add NULL check on mDevice to avoid crash.  [Martinusbe]
+036dc2423  Camera: Add null check on mDevice to avoid crash  [Martinusbe]
+   * frameworks/base/
+77de4cbecd9  camera: Import missing packages  [Prema Chand Alugu]
+33d12c25f3d  Camera2: Fix Error Callback if buffer lost.  [Martinusbe]
+eedeff336e9  Camera: ignore torch status update for aux or compsite camera  [Martinusbe]
+   * hardware/qcom/bt/
+793f635  libbt-qcom: Allow reading BT address from property  [Martinusbe]
+   * hardware/qcom/bt-caf/
+0fbe01c  Revert "Merge tag 'LA.UM.5.5.r1-04900-8x96.0' into HEAD"  [Martinusbe]
+084ee04  libbt-qcom: Allow reading BT address from property  [Martinusbe]
+====================
+     08-18-2017
+====================
+
+
+   * frameworks/base/
+aebbf824b41  SEEMP: Adding auth framework for outgoing SMS messages.  [Martinusbe]
+6959c1ccdf7  base: audioservice: Set BT_SCO status  [Martinusbe]
+====================
+     08-17-2017
+====================
+
+
+   * frameworks/base/
+81907a54771  Power connection notification: fix sound playing when set to silent  [Martinusbe]
+60ec836945a  Frameworks: follow charging notification settings also for wireless charging  [Martinusbe]
+c05318dc6c5  Revert "Base: charger sounds also for wired"  [Martinusbe]
+fca10bf3e35  SystemUI: fix notification on charger  [Martinusbe]
+df1a3533cee  Forward port power connect/disconnect notification support  [Martinusbe]
+   * packages/apps/Settings/
+af165d7965  Forward port power connect/disconnect notification support  [Martinusbe]
+====================
+     08-16-2017
+====================
+
+
+====================
+     08-15-2017
+====================
+
+
+====================
+     08-14-2017
+====================
+
+
+   * frameworks/base/
+03830dc1cc7  IME Switcher notification [1/2]  [Martinusbe]
+   * packages/apps/Settings/
+4c5ea4a05f  IME Switcher notification [2/2]  [Martinusbe]
+====================
+     08-13-2017
+====================
+
+
+====================
+     08-12-2017
+====================
+
+
+   * frameworks/opt/telephony/
+efc22fbf  SmsUsageMonitor:Do not restrict user on SMS sending  [Martinusbe]
+====================
+     08-11-2017
 ====================
 
 
@@ -28,8 +131,16 @@ a32bdd595a7  Close connection before retrying  [Martinusbe]
    * manifest/
 f1895a0  7.1.2_r33  [Martinusbe]
    * vendor/validus/
+fd8727e  update changelog  [Prema Chand Alugu]
 ef88fac  generate changelog for Aug patch  [Martinusbe]
 550f6e8  v15.0 for August big security update  [Martinusbe]
+====================
+     08-10-2017
+====================
+
+
+   * hardware/qcom/audio-caf/msm8996/
+53154f2e0  Fix security vulnerability: Equalizer setParameter memory overflow  [Martinusbe]
 ====================
      08-09-2017
 ====================
@@ -39,10 +150,6 @@ ef88fac  generate changelog for Aug patch  [Martinusbe]
 e8e31f092  Stop supporting kUnknown_BmpHeaderType DO NOT MERGE  [Mirko]
    * frameworks/opt/net/wifi/
 37118305  cherry-pick: wifinative jni: check array length for trackSignificantWifiChange  [Mirko]
-   * hardware/qcom/audio-caf/msm8996/
-53154f2e0  Fix security vulnerability: Equalizer setParameter memory overflow  [Martinusbe]
-   * hardware/qcom/audio-caf/msm8998/
-78a1d00b8  Fix security vulnerability: Equalizer setParameter memory overflow  [Martinusbe]
    * hardware/qcom/audio/default/
 550cb49f4  Merge tag 'android-7.1.2_r33' into n7.1.2  [Mirko]
 ====================
@@ -52,6 +159,8 @@ e8e31f092  Stop supporting kUnknown_BmpHeaderType DO NOT MERGE  [Mirko]
 
    * frameworks/base/
 d4d15ab7a61  Make Data/Wifi activity icon in statusbar optional  [Prema Chand Alugu]
+   * hardware/qcom/audio-caf/msm8998/
+3513a2995  Fix security vulnerability: Equalizer setParameter memory overflow  [Martinusbe]
 ====================
      08-07-2017
 ====================
@@ -59,76 +168,7 @@ d4d15ab7a61  Make Data/Wifi activity icon in statusbar optional  [Prema Chand Al
 
    * frameworks/base/
 58df5c67b8e  Add signature Spoofing permission  [Martinusbe]
+   * hardware/qcom/audio-caf/msm8998/
+1c35407b3  fix build error while we don't have an FM  [Nicholas Flintham]
    * vendor/validus/
 bc2bbd6  Bye bye RC  [GitHub]
-====================
-     08-06-2017
-====================
-
-
-====================
-     08-05-2017
-====================
-
-
-   * packages/apps/Messaging/
-ebae08c  Merge pull request #1 from xX-Yoshi-Xx/n7.1.2  [GitHub]
-====================
-     08-04-2017
-====================
-
-
-   * packages/apps/Messaging/
-4e78e32  Breathing missed call/SMS/voicemail: Update drawables  [Raleigh Matlock]
-====================
-     08-03-2017
-====================
-
-
-====================
-     08-02-2017
-====================
-
-
-====================
-     08-01-2017
-====================
-
-
-   * frameworks/base/
-f9e26324772  Merge pull request #13 from xX-Yoshi-Xx/n7.1.2  [GitHub]
-   * packages/apps/WolvesDen/
-ad1872f  Merge pull request #7 from xX-Yoshi-Xx/n7.1.2  [GitHub]
-   * vendor/validus/
-5eb65c5  Merge pull request #13 from xX-Yoshi-Xx/n7.1.2  [GitHub]
-====================
-     07-31-2017
-====================
-
-
-   * frameworks/base/
-8f5eee8bcab  Set default screenshot delay to 600ms (1/2)  [Raleigh Matlock]
-   * packages/apps/WolvesDen/
-5e19470  Set default screenshot delay to 600ms (2/2)  [Raleigh Matlock]
-   * vendor/validus/
-05189c2  validus: fix denial when setting user profile picture  [Raleigh Matlock]
-====================
-     07-30-2017
-====================
-
-
-====================
-     07-29-2017
-====================
-
-
-====================
-     07-28-2017
-====================
-
-
-====================
-     07-27-2017
-====================
-
-
